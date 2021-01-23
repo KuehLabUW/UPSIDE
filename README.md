@@ -1,7 +1,6 @@
 # UPSIDE
 Software and database for the publication 'Unsupervised discovery of dynamic cell phenotypic states from transmitted light movies' (Nguyen et al., 2021)
 
-UPSIDE SOFTWARE USER GUIDE
 System Requirements
 •	We recommend Linux Ubuntu 16.04.
 •	> 10 GB of RAM NVIDIA graphics card. We used NVIDIA Titan X Pascal.
