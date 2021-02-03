@@ -1,5 +1,5 @@
 # UPSIDE
-Software and database for the publication 'Unsupervised discovery of dynamic cell phenotypic states from transmitted light movies' (Nguyen et al., 2021)
+Software and database for the publication 'Unsupervised discovery of dynamic cell phenotypic states from transmitted light movies' https://www.biorxiv.org/content/10.1101/2021.01.26.428210v1.full (Nguyen et al., 2021)
 
 System Requirements
 
