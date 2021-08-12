@@ -17,4 +17,4 @@ Description
 
 This is the user guide on how to run the UPSIDE software that accompanies the manuscript ‘Unsupervised discovery of dynamic cell phenotypic states from transmitted light movies’ (Nguyen et al., 2021). Image data is available for download separately at https://idr.openmicroscopy.org/about/experiments.html (work in progress)
 Once the data file is downloaded from IDR, place it in the UPSIDEv1/pytorch_fnet-master/pytorch_fnet/data/ directory. 
-Attached is a tutorial of how to apply the UPSIDE software to generate latent encoding and decoding on the Hematopoietic Cell Types Dataset
+Attached in UPSIDEv1 folder is a tutorial of how to apply the UPSIDE software to generate latent encoding and decoding on the Hematopoietic Cell Types Dataset. Additionally, refer to UPSIDE license file in the same folder for license information
