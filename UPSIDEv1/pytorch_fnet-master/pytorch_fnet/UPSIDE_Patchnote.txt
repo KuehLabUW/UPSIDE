@@ -1,0 +1,14 @@
+The following changes was made to run the program at Kueh lab using TIF file images
+
+1) In 'start_docker.sh' script
+ -> replace docker run command with: nvidia-docker run -ti --runtime=nvidia -e NVIDIA_DRIVER_CAPABILITIES=compute,utility -e NVIDIA_VISIBLE_DEVICES=all \
+2) In 'train_Kasumi_model.sh' wrap around script
+ -> add: --class_dataset TiffDataset \
+ -> add: --nn_module fnet_nn_2d \
+3) To correct for ERROR 1: "sequence argument must have length equal to input rank" in tiffdataset.py
+ -> in transform.py, under classResizer, change self.factors to:  self.factors = (factors[0],factors[1]).
+       Originally there are 3 elements to this tuple, causing t(im_out[0]) to raise error in tiffdataset.py
+4) To correct to ERROR 2: "uneven size addition between two numpy arrays" in bufferedpatchdataset.py
+ -> in bufferedpatchdataset.py, under get_random_patch, enter:  if len(self.patch_size) > 3:
+                                                                       self.patch_size = self.patch_size[:-1]
+       Originally "ends = starts + np.array(self.patch_size)" starts has 3 elements but self.patch_size has 4 elements, so removed one tailing element self.patch_size

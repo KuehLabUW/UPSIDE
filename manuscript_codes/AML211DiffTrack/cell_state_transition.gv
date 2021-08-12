@@ -1,0 +1,14 @@
+digraph cell_state_transition {
+	node [fixedsize=false height=1 shape=circle width=1]
+	0 [fontsize=11]
+	node [fixedsize=false height=5 shape=circle width=5]
+	1 [fontsize=15]
+	node [fixedsize=false height=9 shape=circle width=9]
+	2 [fontsize=19]
+	0 -> 1 [weight=0]
+	0 -> 2 [weight=0]
+	1 -> 0 [weight=0]
+	1 -> 2 [weight=0]
+	2 -> 0 [weight=0]
+	2 -> 1 [weight=0]
+}
